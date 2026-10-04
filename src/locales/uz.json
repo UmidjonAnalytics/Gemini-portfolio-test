@@ -1,0 +1,83 @@
+{
+  "nav": {
+    "projects": "Loyihalar",
+    "experience": "Tajriba",
+    "certificates": "Sertifikatlar",
+    "education": "Ta'lim",
+    "skills": "Ko'nikmalar",
+    "testimonials": "Fikrlar",
+    "contact": "Aloqa"
+  },
+  "hero": {
+    "viewProjects": "Loyihalarni ko'rish",
+    "downloadCv": "CV ni yuklab olish",
+    "contactMe": "Men bilan bog'lanish",
+    "yearsExperience": "Yillik tajriba",
+    "projectsCompleted": "Bajarilgan loyihalar",
+    "toolsMastered": "O'zlashtirilgan vositalar",
+    "studentsTaught": "O'qitilgan talabalar"
+  },
+  "about": {
+    "title": "Men haqimda",
+    "location": "Joylashuv",
+    "languages": "Tillar",
+    "availability": "Bandlik holati",
+    "openToWork": "Ishlashga tayyor",
+    "freelance": "Frilans",
+    "notAvailable": "Band"
+  },
+  "skills": {
+    "title": "Ko'nikma va Vositalar",
+    "categories": {
+      "bi": "BI Vositalari",
+      "programming": "Dasturlash",
+      "databases": "Ma'lumotlar bazasi",
+      "soft": "Yumshoq ko'nikmalar"
+    }
+  },
+  "projects": {
+    "title": "Loyihalar",
+    "search": "Loyihalarni qidirish...",
+    "all": "Barchasi",
+    "sortBy": "Saralash",
+    "sortNewest": "Eng yangilari",
+    "sortImpact": "Eng samarali",
+    "sortAz": "A-Z",
+    "viewProject": "Loyihani ko'rish",
+    "problem": "Muammo",
+    "approach": "Yondashuv",
+    "results": "Natijalar",
+    "interactiveChart": "Interaktiv ma'lumotlar",
+    "viewLive": "Jonli namoyish",
+    "viewGithub": "GitHub",
+    "downloadFile": "Faylni yuklab olish"
+  },
+  "experience": {
+    "title": "Ish tajribasi",
+    "present": "Hozirgi vaqt"
+  },
+  "certificates": {
+    "title": "Sertifikatlar",
+    "credentialId": "Sertifikat ID si",
+    "verify": "Sertifikatni tekshirish"
+  },
+  "education": {
+    "title": "Ta'lim"
+  },
+  "testimonials": {
+    "title": "Fikrlar"
+  },
+  "contact": {
+    "title": "Bog'lanish",
+    "name": "Ism",
+    "email": "Email",
+    "message": "Xabar",
+    "send": "Xabarni yuborish",
+    "sending": "Yuborilmoqda...",
+    "success": "Xabar muvaffaqiyatli yuborildi!",
+    "error": "Xabar yuborishda xatolik. Iltimos qayta urinib ko'ring."
+  },
+  "footer": {
+    "rights": "Barcha huquqlar himoyalangan."
+  }
+}

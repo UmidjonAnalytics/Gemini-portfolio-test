@@ -1,0 +1,83 @@
+{
+  "nav": {
+    "projects": "Проекты",
+    "experience": "Опыт",
+    "certificates": "Сертификаты",
+    "education": "Образование",
+    "skills": "Навыки",
+    "testimonials": "Отзывы",
+    "contact": "Контакты"
+  },
+  "hero": {
+    "viewProjects": "Смотреть проекты",
+    "downloadCv": "Скачать CV",
+    "contactMe": "Связаться со мной",
+    "yearsExperience": "Лет опыта",
+    "projectsCompleted": "Проектов",
+    "toolsMastered": "Инструментов",
+    "studentsTaught": "Обучено студентов"
+  },
+  "about": {
+    "title": "Обо мне",
+    "location": "Локация",
+    "languages": "Языки",
+    "availability": "Доступность",
+    "openToWork": "Открыт(а) к предложениям",
+    "freelance": "Фриланс",
+    "notAvailable": "Недоступен(на)"
+  },
+  "skills": {
+    "title": "Навыки и Инструменты",
+    "categories": {
+      "bi": "BI Инструменты",
+      "programming": "Программирование",
+      "databases": "Базы данных",
+      "soft": "Soft Skills"
+    }
+  },
+  "projects": {
+    "title": "Проекты",
+    "search": "Поиск проектов...",
+    "all": "Все",
+    "sortBy": "Сортировка",
+    "sortNewest": "Сначала новые",
+    "sortImpact": "По результативности",
+    "sortAz": "А-Я",
+    "viewProject": "Посмотреть проект",
+    "problem": "Проблема",
+    "approach": "Подход",
+    "results": "Результаты",
+    "interactiveChart": "Интерактивные данные",
+    "viewLive": "Live Demo",
+    "viewGithub": "GitHub",
+    "downloadFile": "Скачать файл"
+  },
+  "experience": {
+    "title": "Опыт работы",
+    "present": "Настоящее время"
+  },
+  "certificates": {
+    "title": "Сертификаты",
+    "credentialId": "ID сертификата",
+    "verify": "Проверить сертификат"
+  },
+  "education": {
+    "title": "Образование"
+  },
+  "testimonials": {
+    "title": "Отзывы"
+  },
+  "contact": {
+    "title": "Связаться",
+    "name": "Имя",
+    "email": "Email",
+    "message": "Сообщение",
+    "send": "Отправить",
+    "sending": "Отправка...",
+    "success": "Сообщение отправлено!",
+    "error": "Ошибка отправки. Попробуйте снова."
+  },
+  "footer": {
+    "rights": "Все права защищены."
+  }
+}

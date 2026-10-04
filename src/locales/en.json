@@ -1,0 +1,83 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "experience": "Experience",
+    "certificates": "Certificates",
+    "education": "Education",
+    "skills": "Skills",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+  "hero": {
+    "viewProjects": "View Projects",
+    "downloadCv": "Download CV",
+    "contactMe": "Contact Me",
+    "yearsExperience": "Years Experience",
+    "projectsCompleted": "Projects Completed",
+    "toolsMastered": "Tools Mastered",
+    "studentsTaught": "Students Taught"
+  },
+  "about": {
+    "title": "About Me",
+    "location": "Location",
+    "languages": "Spoken Languages",
+    "availability": "Availability",
+    "openToWork": "Open to work",
+    "freelance": "Freelance",
+    "notAvailable": "Not available"
+  },
+  "skills": {
+    "title": "Skills & Tools",
+    "categories": {
+      "bi": "BI Tools",
+      "programming": "Programming",
+      "databases": "Databases",
+      "soft": "Soft Skills"
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "search": "Search projects...",
+    "all": "All",
+    "sortBy": "Sort by",
+    "sortNewest": "Newest First",
+    "sortImpact": "Most Impactful",
+    "sortAz": "A-Z",
+    "viewProject": "View Project",
+    "problem": "The Problem",
+    "approach": "The Approach",
+    "results": "The Results",
+    "interactiveChart": "Interactive Data",
+    "viewLive": "Live Demo",
+    "viewGithub": "GitHub",
+    "downloadFile": "Download File"
+  },
+  "experience": {
+    "title": "Experience",
+    "present": "Present"
+  },
+  "certificates": {
+    "title": "Certificates",
+    "credentialId": "Credential ID",
+    "verify": "Verify Certificate"
+  },
+  "education": {
+    "title": "Education"
+  },
+  "testimonials": {
+    "title": "Testimonials"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "Failed to send message. Please try again."
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

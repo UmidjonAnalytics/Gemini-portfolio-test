@@ -1,0 +1,65 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Function to check if user is authenticated admin
+    function isAdmin() {
+      return request.auth != null;
+    }
+
+    // Site Settings (Public read, admin write)
+    match /settings/{document=**} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Profile (Public read, admin write)
+    match /profile/{document=**} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Skills (Public read, admin write)
+    match /skills/{document=**} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Projects (Public read only if published, admin all access)
+    match /projects/{document=**} {
+      allow read: if isAdmin() || resource.data.published == true;
+      allow write: if isAdmin();
+    }
+
+    // Experience (Public read only if published, admin all access)
+    match /experience/{document=**} {
+      allow read: if isAdmin() || resource.data.published == true;
+      allow write: if isAdmin();
+    }
+
+    // Certificates (Public read only if published, admin all access)
+    match /certificates/{document=**} {
+      allow read: if isAdmin() || resource.data.published == true;
+      allow write: if isAdmin();
+    }
+
+    // Education (Public read only if published, admin all access)
+    match /education/{document=**} {
+      allow read: if isAdmin() || resource.data.published == true;
+      allow write: if isAdmin();
+    }
+
+    // Testimonials (Public read only if published, admin all access)
+    match /testimonials/{document=**} {
+      allow read: if isAdmin() || resource.data.published == true;
+      allow write: if isAdmin();
+    }
+
+    // Messages (Public create only, admin read/delete)
+    match /messages/{document=**} {
+      allow create: if true; // Anyone can send a message
+      allow read, delete: if isAdmin();
+      allow update: if false; // Messages shouldn't be edited
+    }
+  }
+}
