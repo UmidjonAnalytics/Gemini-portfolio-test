@@ -55,11 +55,16 @@ service cloud.firestore {
       allow write: if isAdmin();
     }
 
-    // Messages (Public create only, admin read/delete)
+    // Blog (Public read only if published, admin all access)
+    match /blog/{document=**} {
+      allow read: if isAdmin() || resource.data.published == true;
+      allow write: if isAdmin();
+    }
+
+    // Messages (Public create only, admin read/delete/update for mark-as-read)
     match /messages/{document=**} {
       allow create: if true; // Anyone can send a message
-      allow read, delete: if isAdmin();
-      allow update: if false; // Messages shouldn't be edited
+      allow read, delete, update: if isAdmin();
     }
   }
 }

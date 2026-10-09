@@ -26,7 +26,7 @@ export default function Projects() {
 
   // Chart states
   const [chartType, setChartType] = useState<'bar'|'line'|'area'>('bar');
-  const [activeSeries, setActiveSeries] = useState<string>('value');
+  const [activeSeries, setActiveSeries] = useState<string>('');
 
   useEffect(() => {
     const unsub = onSnapshot(collection(db, 'projects'), (snap) => {
@@ -107,15 +107,33 @@ export default function Projects() {
 
       return (
         <div className="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700 shadow-inner my-8">
-          <div className="flex justify-between items-center mb-6">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
             <h4 className="font-semibold text-gray-900 dark:text-white flex items-center">
               <BarChart3 className="w-5 h-5 mr-2 text-indigo-500" />
               {dict.projects.interactiveChart}
             </h4>
-            <div className="flex items-center space-x-2 bg-gray-100 dark:bg-gray-900 p-1 rounded-lg">
-              <button onClick={() => setChartType('bar')} className={`p-1.5 rounded-md ${chartType === 'bar' ? 'bg-white dark:bg-gray-700 shadow-sm' : 'text-gray-500 hover:text-gray-900'}`}><BarChart3 size={16} /></button>
-              <button onClick={() => setChartType('line')} className={`p-1.5 rounded-md ${chartType === 'line' ? 'bg-white dark:bg-gray-700 shadow-sm' : 'text-gray-500 hover:text-gray-900'}`}><LineChart size={16} /></button>
-              <button onClick={() => setChartType('area')} className={`p-1.5 rounded-md ${chartType === 'area' ? 'bg-white dark:bg-gray-700 shadow-sm' : 'text-gray-500 hover:text-gray-900'}`}><PieChart size={16} /></button>
+
+            <div className="flex flex-wrap items-center gap-4 w-full sm:w-auto justify-between sm:justify-end">
+              {dataKeys.length > 1 && (
+                <div className="flex items-center space-x-2">
+                  <span className="text-xs text-gray-500 dark:text-gray-400 font-medium">Metric:</span>
+                  <select
+                    value={seriesToRender}
+                    onChange={(e) => setActiveSeries(e.target.value)}
+                    className="text-sm bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg px-2 py-1 outline-none focus:ring-1 focus:ring-indigo-500"
+                  >
+                    {dataKeys.map(key => (
+                      <option key={key} value={key}>{key.charAt(0).toUpperCase() + key.slice(1)}</option>
+                    ))}
+                  </select>
+                </div>
+              )}
+
+              <div className="flex items-center space-x-2 bg-gray-100 dark:bg-gray-900 p-1 rounded-lg">
+                <button onClick={() => setChartType('bar')} className={`p-1.5 rounded-md ${chartType === 'bar' ? 'bg-white dark:bg-gray-700 shadow-sm' : 'text-gray-500 hover:text-gray-900'}`}><BarChart3 size={16} /></button>
+                <button onClick={() => setChartType('line')} className={`p-1.5 rounded-md ${chartType === 'line' ? 'bg-white dark:bg-gray-700 shadow-sm' : 'text-gray-500 hover:text-gray-900'}`}><LineChart size={16} /></button>
+                <button onClick={() => setChartType('area')} className={`p-1.5 rounded-md ${chartType === 'area' ? 'bg-white dark:bg-gray-700 shadow-sm' : 'text-gray-500 hover:text-gray-900'}`}><PieChart size={16} /></button>
+              </div>
             </div>
           </div>
 
